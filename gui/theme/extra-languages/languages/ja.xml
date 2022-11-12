@@ -337,8 +337,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">夏時間 (DST) を使用する</string>
-		<string name="curr_tz">現在のタイムゾーン: %tw_time_zone%</string>
-		<string name="curr_tz_s">現在のタイムゾーン:</string>
+		<string name="curr_t">現在のタイムゾーン: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">現在のタイムゾーン:</string>
 		<string name="set_tz_btn">タイムゾーンの設定</string>
 		<string name="settings_screen_hdr">画面</string>
 		<string name="settings_screen_timeout_hdr">消灯までの時間</string>

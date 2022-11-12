@@ -365,8 +365,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Gunakan waktu musim panas (DST)</string>
-		<string name="curr_tz">Zona waktu saat ini: %tw_time_zone%</string>
-		<string name="curr_tz_s">Zona waktu saat Ini:</string>
+		<string name="curr_t">Zona waktu saat ini: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Zona waktu saat Ini:</string>
 		<string name="set_tz_btn">Atur zona waktu</string>
 		<string name="settings_screen_hdr">Layar</string>
 		<string name="settings_screen_timeout_hdr">Waktu Redup Layar</string>

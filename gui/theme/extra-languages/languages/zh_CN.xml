@@ -367,8 +367,8 @@
 		<string name="tz_offset_30">30 分钟</string>
 		<string name="tz_offset_45">45 分钟</string>
 		<string name="use_dst_chk">使用夏令时 (DST)</string>
-		<string name="curr_tz">当前时区: %tw_time_zone%</string>
-		<string name="curr_tz_s">当前时区：</string>
+		<string name="curr_t">当前时区: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">当前时区：</string>
 		<string name="set_tz_btn">设置时区</string>
 		<string name="settings_screen_hdr">屏幕</string>
 		<string name="settings_screen_timeout_hdr">屏幕超时</string>

@@ -343,8 +343,8 @@
         <string name="tz_offset_30">30</string>
         <string name="tz_offset_45">45</string>
         <string name="use_dst_chk">Χρησιμοποιήστε τη θερινή ώρα (DST)</string>
-        <string name="curr_tz">Τρέχουσα ζώνης ώρας: %tw_time_zone%</string>
-        <string name="curr_tz_s">Τρέχουσα ζώνης ώρας:</string>
+        <string name="curr_t">Τρέχουσα ζώνης ώρας: %tw_time% (%tw_time_zone%)</string>
+        <string name="curr_t_s">Τρέχουσα ζώνης ώρας:</string>
         <string name="set_tz_btn">Ορισμός ζώνης ώρας</string>
         <string name="settings_screen_hdr">Ρυθμίσεις οθόνης</string>
         <string name="settings_screen_timeout_hdr">Χρονικό όριο οθόνης</string>

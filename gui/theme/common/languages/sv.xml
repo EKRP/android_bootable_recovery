@@ -131,7 +131,7 @@
 		<string name="tz_offset_15">15</string>
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
-		<string name="curr_tz_s">Aktuell tidszon:</string>
+		<string name="curr_t_s">Aktuell tidszon:</string>
 		<string name="set_tz_btn">Ställ in tidszon</string>
 		<string name="vibration_hdr">Vibration</string>
 		<string name="select_language">Välj språk:</string>

@@ -365,8 +365,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Sommerzeit verwenden</string>
-		<string name="curr_tz">Aktuelle Zeitzone: %tw_time_zone%</string>
-		<string name="curr_tz_s">Aktuelle Zeitzone:</string>
+		<string name="curr_t">Aktuelle Zeitzone: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Aktuelle Zeitzone:</string>
 		<string name="set_tz_btn">Zeitzone einstellen</string>
 		<string name="settings_screen_hdr">Bildschirm</string>
 		<string name="settings_screen_timeout_hdr">Bildschirm-Timeout</string>

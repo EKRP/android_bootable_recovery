@@ -367,8 +367,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Použít letní čas (DST)</string>
-		<string name="curr_tz">Aktuální časové pásmo: %tw_time_zone%</string>
-		<string name="curr_tz_s">Aktuální časové pásmo:</string>
+		<string name="curr_t">Aktuální časové pásmo: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Aktuální časové pásmo:</string>
 		<string name="set_tz_btn">Nastav časové pásmo</string>
 		<string name="settings_screen_hdr">Obrazovka</string>
 		<string name="settings_screen_timeout_hdr">Vypnutí obrazovky</string>

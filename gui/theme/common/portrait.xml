@@ -3588,7 +3588,7 @@
 			<text color="%text_color%">
 				<font resource="font_m"/>
 				<placement x="%indent%" y="%row20_y%"/>
-				<text>{@curr_tz=Current Time Zone: %tw_time_zone%}</text>
+				<text>{@curr_t=Current Time: %tw_time% (%tw_time_zone%)}</text>
 			</text>
 
 			<button>

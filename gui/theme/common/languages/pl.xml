@@ -367,8 +367,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Użyj czasu letniego (DST)</string>
-		<string name="curr_tz">Obecna strefa czasowa: %tw_time_zone%</string>
-		<string name="curr_tz_s">Obecna strefa czasowa:</string>
+		<string name="curr_t">Obecna strefa czasowa: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Obecna strefa czasowa:</string>
 		<string name="set_tz_btn">Ustaw strefę czasową</string>
 		<string name="settings_screen_hdr">Ekran</string>
 		<string name="settings_screen_timeout_hdr">Wygaszanie ekranu</string>

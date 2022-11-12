@@ -355,8 +355,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Nyári időszámítás használata (DST)</string>
-		<string name="curr_tz">Jelenlegi időzóna: %tw_time_zone%</string>
-		<string name="curr_tz_s">Jelenlegi időzóna:</string>
+		<string name="curr_t">Jelenlegi időzóna: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Jelenlegi időzóna:</string>
 		<string name="set_tz_btn">Időzóna beállítása</string>
 		<string name="settings_screen_hdr">Képernyő</string>
 		<string name="settings_screen_timeout_hdr">Képernyő időkorlátja</string>

@@ -367,8 +367,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Использовать летнее время (DST)</string>
-		<string name="curr_tz">Текущий часовой пояс: %tw_time_zone%</string>
-		<string name="curr_tz_s">Текущий часовой пояс:</string>
+		<string name="curr_t">Текущий часовой пояс: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Текущий часовой пояс:</string>
 		<string name="set_tz_btn">Установ.часовой пояс</string>
 		<string name="settings_screen_hdr">Экран</string>
 		<string name="settings_screen_timeout_hdr">Таймаут экрана</string>

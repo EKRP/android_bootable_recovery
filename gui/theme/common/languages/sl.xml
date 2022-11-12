@@ -332,8 +332,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Uporabi poletni čas (DST)</string>
-		<string name="curr_tz">Trenutni časovni pas: %tw_time_zone%</string>
-		<string name="curr_tz_s">Trenutni časovni pas:</string>
+		<string name="curr_t">Trenutni časovni pas: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Trenutni časovni pas:</string>
 		<string name="set_tz_btn">Nastavi časovni pas</string>
 		<string name="settings_screen_hdr">Zaslon</string>
 		<string name="settings_screen_timeout_hdr">Časovna omejitev zaslona</string>

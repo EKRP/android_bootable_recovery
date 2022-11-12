@@ -356,8 +356,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Gün ışığından yararlanma saati (DST) kullan</string>
-		<string name="curr_tz">Geçerli Zaman Dilimi: %tw_time_zone%</string>
-		<string name="curr_tz_s">Geçerli Zaman Dilimi:</string>
+		<string name="curr_t">Geçerli Zaman Dilimi: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Geçerli Zaman Dilimi:</string>
 		<string name="set_tz_btn">Zaman Dilimini Ayarla</string>
 		<string name="settings_screen_hdr">Ekran</string>
 		<string name="settings_screen_timeout_hdr">Ekran Zaman Aşımı</string>

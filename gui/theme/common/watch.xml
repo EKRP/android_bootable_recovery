@@ -4021,12 +4021,12 @@
 
 			<text style="text_m_accent">
 				<placement x="%btn4_col2_x%" y="%row11_y%"/>
-				<text>{@curr_tz_s=Current Time Zone:}</text>
+				<text>{@curr_t_s=Current Time:}</text>
 			</text>
 
 			<text style="text_m">
 				<placement x="%btn4_col2_x%" y="%row12a_y%"/>
-				<text>%tw_time_zone%</text>
+				<text>%tw_time% (%tw_time_zone%)</text>
 			</text>
 
 			<action>

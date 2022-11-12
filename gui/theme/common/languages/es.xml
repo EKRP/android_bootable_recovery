@@ -333,8 +333,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Utilizar el horario de verano (DST)</string>
-		<string name="curr_tz">Zona Horaria Actual: %tw_time_zone%</string>
-		<string name="curr_tz_s">Zona Horaria Actual:</string>
+		<string name="curr_t">Zona Horaria Actual: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Zona Horaria Actual:</string>
 		<string name="set_tz_btn">Establecer Zona Horaria</string>
 		<string name="settings_screen_hdr">Pantalla</string>
 		<string name="settings_screen_timeout_hdr">Tiempo de espera de pantalla</string>

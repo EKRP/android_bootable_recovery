@@ -360,8 +360,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Zomertijd (DST) gebruiken</string>
-		<string name="curr_tz">Huidige tijdzone: %tw_time_zone%</string>
-		<string name="curr_tz_s">Huidige tijdzone:</string>
+		<string name="curr_t">Huidige tijdzone: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Huidige tijdzone:</string>
 		<string name="set_tz_btn">Tijdzone instellen</string>
 		<string name="settings_screen_hdr">Scherm</string>
 		<string name="settings_screen_timeout_hdr">Schermverlooptijd</string>

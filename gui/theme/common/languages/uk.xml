@@ -338,8 +338,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Використовувати літній час (DST)</string>
-		<string name="curr_tz">Часовий пояс: %tw_time_zone%</string>
-		<string name="curr_tz_s">Часовий пояс:</string>
+		<string name="curr_t">Часовий пояс: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Часовий пояс:</string>
 		<string name="set_tz_btn">Встановити часовий пояс</string>
 		<string name="settings_screen_hdr">Екран</string>
 		<string name="settings_screen_timeout_hdr">Таймаут екрану</string>

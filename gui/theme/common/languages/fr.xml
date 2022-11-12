@@ -330,8 +330,8 @@
         <string name="tz_offset_30">30</string>
         <string name="tz_offset_45">45</string>
         <string name="use_dst_chk">Utiliser l'heure d'été/hiver (DST)</string>
-        <string name="curr_tz">Fuseau horaire : %tw_time_zone%</string>
-        <string name="curr_tz_s">Fuseau horaire :</string>
+        <string name="curr_t">Fuseau horaire : %tw_time% (%tw_time_zone%)</string>
+        <string name="curr_t_s">Fuseau horaire :</string>
         <string name="set_tz_btn">Régler le fuseau horaire</string>
         <string name="settings_screen_hdr">Paramètres d'écran</string>
         <string name="settings_screen_timeout_hdr">Mise en veille de l'écan</string>

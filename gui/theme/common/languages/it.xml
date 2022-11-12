@@ -355,8 +355,8 @@
 		<string name="tz_offset_30">30</string>
 		<string name="tz_offset_45">45</string>
 		<string name="use_dst_chk">Usa ora legale</string>
-		<string name="curr_tz">Fuso orario attuale: %tw_time_zone%</string>
-		<string name="curr_tz_s">Fuso orario attuale:</string>
+		<string name="curr_t">Fuso orario attuale: %tw_time% (%tw_time_zone%)</string>
+		<string name="curr_t_s">Fuso orario attuale:</string>
 		<string name="set_tz_btn">Imposta fuso orario</string>
 		<string name="settings_screen_hdr">Schermo</string>
 		<string name="settings_screen_timeout_hdr">Timeout schermo</string>
