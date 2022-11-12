@@ -383,6 +383,7 @@ protected:
 	int editfile(std::string arg);
 #endif
 
+	int flashlight(std::string arg);
 	int simulate;
 };
 

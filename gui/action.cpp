@@ -208,6 +208,7 @@ GUIAction::GUIAction(xml_node<>* node)
 		ADD_ACTION(enablefastboot);
 		ADD_ACTION(changeterminal);
 		ADD_ACTION(unmapsuperdevices);
+		ADD_ACTION(flashlight);
 
 		// remember actions that run in the caller thread
 		for (mapFunc::const_iterator it = mf.begin(); it != mf.end(); ++it)
@@ -2359,5 +2360,27 @@ int GUIAction::mergesnapshots(string arg __unused) {
 		op_status = 0;
 	}
 	operation_end(op_status);
+	return 0;
+}
+
+int GUIAction::flashlight(std::string arg __unused) {
+	if (DataManager::GetIntValue("ek_enable_flashlight") == 100) {
+		gui_print_color("red", "ERROR: Flashlight was not implemented!\n");
+		return 0;
+	}
+	if (TWFunc::Path_Exists(DataManager::GetStrValue("ek_flashlight_sysfs"))) {
+		LOGINFO("Flashlight Sysfs Found\n");
+		if (DataManager::GetIntValue("ek_enable_flashlight") == 1) {
+			gui_print_color("red", "Turning Flashlight Off\n");
+			TWFunc::write_to_file(DataManager::GetStrValue("ek_flashlight_sysfs"), "0");
+			DataManager::SetValue("ek_enable_flashlight", "0");
+		} else {
+			gui_print_color("green", "Turning Flashlight On\n");
+			TWFunc::write_to_file(DataManager::GetStrValue("ek_flashlight_sysfs"), std::to_string(DataManager::GetIntValue("ek_flashlight_value")));
+			DataManager::SetValue("ek_enable_flashlight", "1");
+		}
+	} else {
+		LOGINFO("Incorrect Flashlight Sysfs\n");
+	}
 	return 0;
 }

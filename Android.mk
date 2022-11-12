@@ -414,6 +414,15 @@ endif
 ifeq ($(TW_INCLUDE_FASTBOOTD), true)
     LOCAL_CFLAGS += -DTW_INCLUDE_FASTBOOTD
 endif
+ifneq ($(EK_FLASHLIGHT_SYSFS),)
+    LOCAL_CFLAGS += -DEK_FLASHLIGHT_SYSFS=\"$(EK_FLASHLIGHT_SYSFS)\"
+    LOCAL_CFLAGS += -DEK_FLASHLIGHT_SUPPORTED
+    ifneq ($(EK_FLASHLIGHT_VALUE),)
+        LOCAL_CFLAGS += -DEK_FLASHLIGHT_VALUE=$(EK_FLASHLIGHT_VALUE)
+    else
+        LOCAL_CFLAGS += -DEK_FLASHLIGHT_VALUE=1
+    endif
+endif
 
 LOCAL_C_INCLUDES += system/vold \
 
@@ -726,3 +735,4 @@ endif
 endif
 
 commands_TWRP_local_path :=
+

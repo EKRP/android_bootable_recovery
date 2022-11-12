@@ -578,6 +578,15 @@ void DataManager::SetDefaultValues()
 	mConst.SetValue("false", "0");
 
 	mConst.SetValue(TW_VERSION_VAR, TW_VERSION_STR);
+#ifdef EK_FLASHLIGHT_SUPPORTED
+	mData.SetValue("ek_enable_flashlight", "0");
+	mConst.SetValue("ek_flashlight_sysfs", EK_FLASHLIGHT_SYSFS);
+	mConst.SetValue("ek_flashlight_value", EK_FLASHLIGHT_VALUE);
+#else
+	mData.SetValue("ek_enable_flashlight", "100");
+	mConst.SetValue("ek_flashlight_sysfs", "NULL");
+	mConst.SetValue("ek_flashlight_value", "0");
+#endif
 
 #ifndef TW_NO_HAPTICS
 	mPersist.SetValue("tw_button_vibrate", "80");
