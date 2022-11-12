@@ -4489,6 +4489,9 @@
 						<action function="page">confirm_action</action>
 					</actions>
 				</listitem>
+				<listitem name="{@flash_btn=Flashlight}">
+                                        <action function="flashlight"/>
+                                </listitem>
 			</listbox>
 
 			<button>
