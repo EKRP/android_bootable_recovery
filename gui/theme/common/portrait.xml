@@ -76,13 +76,13 @@
 
 		<style name="console">
 			<fastscroll rectcolor="%accent_color%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
-			<color foreground="%text_color%" background="%background_color%" scroll="%background_color%"/>
+			<color foreground="%text_color%" background="#000000" scroll="%background_color%"/>
 			<font resource="fixed"/>
 		</style>
 
 		<style name="terminal">
 			<fastscroll linecolor="%transparent%" rectcolor="%accent_color%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
-			<background color="%background_color%"/>
+			<background color="#000000"/>
 			<font resource="fixed" spacing="3" color="%text_color%"/>
 		</style>
 
@@ -103,7 +103,7 @@
 			<fastscroll linecolor="%fileselector_linecolor%" rectcolor="%accent_color%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
 			<separator color="%fileselector_linecolor%" height="%fileselector_separatorheight%"/>
 			<icon selected="radio_true" unselected="radio_false"/>
-			<background color="%background_color%"/>
+			<background color="#000000"/>
 			<font resource="font_m" spacing="%fileselector_spacing%" color="%text_color%" highlightcolor="%accent_color%"/>
 		</style>
 
@@ -171,6 +171,12 @@
 		<style name="patternpassword">
 			<size name="tw_gui_pattern_grid_size" default="3"/>
 		</style>
+		
+		<style name="torch_button">
+			<highlight color="%highlight_color%"/>
+			<font resource="font_m" color="%text_button_color%"/>
+			<image resource="flashlights"/>
+		</style>
 	</styles>
 
 	<pages>
@@ -188,7 +194,7 @@
 
 			<text style="text_l">
 				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{@twrp_header=Team Win Recovery Project}</text>
+				<text>{@twrp_header=Eureka Recovery Project}</text>
 			</text>
 
 			<text style="text_m">
@@ -198,7 +204,7 @@
 			</text>
 
 			<button style="main_button">
-				<placement x="%indent%" y="%row2a_y%"/>
+				<placement x="125" y="350"/>
 				<text>{@install_btn=Install}</text>
 				<actions>
 					<action function="queueclear"/>
@@ -208,43 +214,49 @@
 			</button>
 
 			<button style="main_button">
-				<placement x="%center_x%" y="%row2a_y%"/>
+				<placement x="600" y="350"/>
 				<text>{@wipe_btn=Wipe}</text>
 				<action function="page">wipe</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="%indent%" y="%row8_y%"/>
+				<placement x="125" y="550"/>
 				<text>{@backup_btn=Backup}</text>
 				<action function="page">backup</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="%center_x%" y="%row8_y%"/>
+				<placement x="600" y="550"/>
 				<text>{@restore_btn=Restore}</text>
 				<action function="page">restore</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="%indent%" y="%row13a_y%"/>
+				<placement x="125" y="750"/>
 				<text>{@mount_btn=Mount}</text>
 				<action function="page">mount</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="%center_x%" y="%row13a_y%"/>
+				<placement x="600" y="750"/>
 				<text>{@settings_btn=Settings}</text>
 				<action function="page">settings</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="%indent%" y="%row19_y%"/>
+				<placement x="125" y="950"/>
 				<text>{@advanced_btn=Advanced}</text>
 				<action function="page">advanced</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="%center_x%" y="%row19_y%"/>
+				<placement x="600" y="950"/>
+				<text>{@eureka_btn=Eureka}</text>
+				<action function="page">eureka</action>
+			</button>
+
+			<button style="main_button">
+				<placement x="125" y="1150"/>
 				<text>{@reboot_btn=Reboot}</text>
 				<action function="page">reboot</action>
 			</button>
@@ -3265,7 +3277,31 @@
 				<action function="page">main</action>
 			</action>
 		</page>
+		
+		<page name="eureka">
+			<template name="page"/>
 
+			<text style="text_l">
+				<placement x="%col1_x_header%" y="%row3_header_y%"/>
+				<text>{@eureka_hdr=Eureka}</text>
+			</text>
+			
+			<button style="torch_button">
+				<placement x="125" y="350"/>
+				<action function="flashlight"/>
+			</button>	
+
+			<action>
+				<touch key="home"/>
+				<action function="page">main</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">main</action>
+			</action>
+		</page>
+		
 		<page name="installapp">
 			<template name="page"/>
 
@@ -3836,26 +3872,26 @@
 			</text>
 
 			<button style="main_button">
-				<placement x="%indent%" y="%row2a_y%"/>
+				<placement x="125" y="350%"/>
 				<text>{@copy_log_btn=Copy Log}</text>
 				<action function="page">copylog</action>
 			</button>
 
 			<button style="main_button">
 				<condition var1="tw_has_data_media" var2="1"/>
-				<placement x="%center_x%" y="%row2a_y%"/>
+				<placement x="600" y="350"/>
 				<text>{@adb_sideload_btn=ADB Sideload}</text>
 				<action function="page">sideload</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="%indent%" y="%row8_y%"/>
+				<placement x="125" y="550"/>
 				<text>{@terminal_btn=Terminal}</text>
 				<action function="page">terminalcommand</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="%center_x%" y="%row8_y%"/>
+				<placement x="600" y="550"/>
 				<text>{@file_manager_btn=File Manager}</text>
 				<action function="page">filemanagerlist</action>
 			</button>
@@ -4002,9 +4038,6 @@
 						<action function="page">confirm_action</action>
 					</actions>
 				</listitem>
-                                <listitem name="{@flash_btn=Flashlight}">
-                                        <action function="flashlight"/>
-                                </listitem>
 			</listbox>
 
 			<action>
@@ -4408,11 +4441,18 @@
 				<image resource="unlock_icon"/>
 				<placement x="%center_x%" y="%row10_y%" placement="4"/>
 			</image>
-
-			<slider>
-				<text>{@swipe_to_unlock=Swipe to Unlock}</text>
+			
+			<button>
+				<placement x="%center_x%" y="%row10_y%" placement="4"/>
+				<image resource="unlock_icon"/>
+				<text>{@swipe_to_unlock}</text>
 				<action function="overlay"/>
-			</slider>
+			</button>
+						
+			<text style="text_m">
+				<placement x="%center_x%" y="%row14_y%" placement="4"/>
+				<text>{@swipe_to_unlock=Tap to Unlock}</text>
+			</text>
 
 			<action>
 				<touch key="power"/>

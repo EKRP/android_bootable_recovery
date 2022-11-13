@@ -33,7 +33,6 @@
 		<string name="autostorage">Storage</string>
 
 		<!-- GUI XML strings -->
-		<string name="twrp_header">Team Win Recovery Project</string>
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
 		<string name="cpu_temp">CPU: %tw_cpu_temp%°C</string>
 		<string name="battery_pct">Battery: %tw_battery%</string>
@@ -433,8 +432,6 @@
 		<string name="dumlock_install_confirm">Install HTC dumlock files to ROM?</string>
 		<string name="dumlock_installing">Installing HTC Dumlock...</string>
 		<string name="dumlock_install_complete">HTC Dumlock Install Complete</string>
-		<string name="swipe_to_unlock">Swipe to Unlock</string>
-		<string name="swipe_unlock">   Unlock</string>
 		<string name="fm_hdr">File Manager</string>
 		<string name="fm_sel_file">Select a File or Folder</string>
 		<string name="fm_type_folder">Folder</string>
@@ -794,5 +791,11 @@
 		<string name="restore_with_pattern1">Pattern is enabled</string>
 		<string name="restore_with_pattern2">Pattern should be disabled before restore</string>
 		<string name="reboot_after_restore">It is recommended to reboot Android once after first boot.</string>
+		<!-- Need Translate to every lang. | Self added strings starts here -->
+		<string name="eureka_btn">Eureka</string>
+		<string name="swipe_to_unlock">Tap to Unlock</string>
+		<string name="swipe_unlock">   Unlock</string>
+		<string name="eureka_hdr">Eureka</string>
+		<string name="twrp_header">Eureka Recovery Project</string>
 	</resources>
 </language>
