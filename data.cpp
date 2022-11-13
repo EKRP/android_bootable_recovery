@@ -661,6 +661,11 @@ void DataManager::SetDefaultValues()
 #else
 	mConst.SetValue(TW_NO_BATTERY_PERCENT, "0");
 #endif
+#ifdef EK_HIDE_CLOCK
+	mConst.SetValue(EK_NO_CLOCK, "1");
+#else
+	mConst.SetValue(EK_NO_CLOCK, "0");
+#endif
 #ifdef TW_NO_CPU_TEMP
 	printf("TW_NO_CPU_TEMP := true\n");
 	mConst.SetValue("tw_no_cpu_temp", "1");

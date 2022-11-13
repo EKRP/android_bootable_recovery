@@ -247,6 +247,9 @@ endif
 ifeq ($(TW_NO_BATT_PERCENT), true)
     LOCAL_CFLAGS += -DTW_NO_BATT_PERCENT
 endif
+ifeq ($(EK_HIDE_CLOCK), true)
+    LOCAL_CFLAGS += -DEK_HIDE_CLOCK
+endif
 ifeq ($(TW_NO_CPU_TEMP), true)
     LOCAL_CFLAGS += -DTW_NO_CPU_TEMP
 endif

@@ -225,6 +225,7 @@
 			</text>
 
 			<text color="%text_color%">
+				<condition var1="ek_hide_clock" var2="0"/>
 				<condition var1="tw_clock_12_pos_x" var2="0"/>
 				<condition var1="tw_clock_24_pos_x" var2="0"/>
 				<font resource="font_m"/>
