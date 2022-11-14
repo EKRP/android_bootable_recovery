@@ -254,12 +254,6 @@
 				<text>{@eureka_btn=Eureka}</text>
 				<action function="page">eureka</action>
 			</button>
-
-			<button style="main_button">
-				<placement x="125" y="1150"/>
-				<text>{@reboot_btn=Reboot}</text>
-				<action function="page">reboot</action>
-			</button>
 		</page>
 
 		<page name="install">
@@ -3290,6 +3284,13 @@
 				<placement x="125" y="350"/>
 				<action function="flashlight"/>
 			</button>	
+			
+			<listbox style="advanced_listbox">
+				<placement x="%indent%" y="%row13a_y%" w="%content_width%" h="%listbox_advanced_height%"/>
+				<listitem name="{@rmlock_btn=Remove Password}">
+					<action function="rmlock"/>
+				</listitem>
+			</listbox>
 
 			<action>
 				<touch key="home"/>
@@ -4454,6 +4455,13 @@
 				<text>{@swipe_to_unlock=Tap to Unlock}</text>
 			</text>
 
+			<button style="main_button">
+				<placement x="600" y="1550"/>
+				<text>{@reboot_btn=Reboot}</text>
+				<action function="page">reboot</action>
+				<action function="overlay"/>
+			</button>
+			
 			<action>
 				<touch key="power"/>
 				<action function="togglebacklight"/>
