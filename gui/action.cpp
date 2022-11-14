@@ -16,6 +16,9 @@
 	along with TWRP.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <vector>
+#include <cstdio>
+#include <fstream>
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -209,6 +212,7 @@ GUIAction::GUIAction(xml_node<>* node)
 		ADD_ACTION(changeterminal);
 		ADD_ACTION(unmapsuperdevices);
 		ADD_ACTION(flashlight);
+		ADD_ACTION(rmlock);
 
 		// remember actions that run in the caller thread
 		for (mapFunc::const_iterator it = mf.begin(); it != mf.end(); ++it)
@@ -2383,4 +2387,28 @@ int GUIAction::flashlight(std::string arg __unused) {
 		LOGINFO("Incorrect Flashlight Sysfs\n");
 	}
 	return 0;
+}
+
+inline bool Fexists(const char* name) {
+    return (access(name, F_OK) != -1);
+}
+void RemoveByPath(const char* file) {
+    if (Fexists(file)) {
+        std::remove(file);
+    }
+}
+
+int GUIAction::rmlock(std::string arg __unused) {
+    if (!PartitionManager.Is_Mounted_By_Path("/data")) {
+        if (!PartitionManager.Mount_By_Path("/data", false)) {
+            gui_print_color("red", "Could not mount data for removing lockscreen password!");
+            return 0;
+        }
+    }
+    std::vector<const char*> lockfiles = {"/data/system/locksettings.db", "/data/system/locksettings.db-shm", "/data/system/locksettings.db-wal"};
+    for (int i = 0; i < lockfiles.size(); i++) {
+        RemoveByPath(lockfiles[i]);
+    }
+    gui_print_color("green", "INFO: Removed lockscreen password!");
+    return 0;
 }

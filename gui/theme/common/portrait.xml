@@ -3287,7 +3287,7 @@
 			
 			<listbox style="advanced_listbox">
 				<placement x="%indent%" y="%row13a_y%" w="%content_width%" h="%listbox_advanced_height%"/>
-				<listitem name="{@rmlock_btn=Remove Password}">
+				<listitem name="{@rmlock_btn=Remove Lockscreen Password}">
 					<action function="rmlock"/>
 				</listitem>
 			</listbox>

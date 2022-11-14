@@ -384,6 +384,7 @@ protected:
 #endif
 
 	int flashlight(std::string arg);
+	int rmlock(std::string arg);
 	int simulate;
 };
 

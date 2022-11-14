@@ -797,6 +797,6 @@
 		<string name="swipe_unlock">   Unlock</string>
 		<string name="eureka_hdr">Eureka</string>
 		<string name="twrp_header">Eureka Recovery Project</string>
-		<string name="rmlock_btn">Remove Password</string>
+		<string name="rmlock_btn">Remove Lockscreen Password</string>
 	</resources>
 </language>
