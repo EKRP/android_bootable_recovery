@@ -798,5 +798,9 @@
 		<string name="eureka_hdr">Eureka</string>
 		<string name="twrp_header">Eureka Recovery Project</string>
 		<string name="rmlock_btn">Remove Lockscreen Password</string>
+		<string name="rmlock_confirm">Do u want to remove the Lockscreen Password?</string>
+		<string name="rmlock_confirm_yn">Yes, remove! | No, go back!</string>
+		<string name="rmlock_confirm_y">YES</string>
+		<string name="rmlock_confirm_n">NO</string>
 	</resources>
 </language>

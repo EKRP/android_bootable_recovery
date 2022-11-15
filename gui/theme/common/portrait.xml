@@ -204,7 +204,7 @@
 			</text>
 
 			<button style="main_button">
-				<placement x="125" y="350"/>
+				<placement x="%indent%" y="%row2a_y%"/>
 				<text>{@install_btn=Install}</text>
 				<actions>
 					<action function="queueclear"/>
@@ -214,43 +214,43 @@
 			</button>
 
 			<button style="main_button">
-				<placement x="600" y="350"/>
+				<placement x="%center_x%" y="%row2a_y%"/>
 				<text>{@wipe_btn=Wipe}</text>
 				<action function="page">wipe</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="125" y="550"/>
+				<placement x="%indent%" y="%row8_y%"/>
 				<text>{@backup_btn=Backup}</text>
 				<action function="page">backup</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="600" y="550"/>
+				<placement x="%center_x%" y="%row8_y%"/>
 				<text>{@restore_btn=Restore}</text>
 				<action function="page">restore</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="125" y="750"/>
+				<placement x="%indent%" y="%row13a_y%"/>
 				<text>{@mount_btn=Mount}</text>
 				<action function="page">mount</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="600" y="750"/>
+				<placement x="%center_x%" y="%row13a_y%"/>
 				<text>{@settings_btn=Settings}</text>
 				<action function="page">settings</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="125" y="950"/>
+				<placement x="%indent%" y="%row19_y%"/>
 				<text>{@advanced_btn=Advanced}</text>
 				<action function="page">advanced</action>
 			</button>
 
 			<button style="main_button">
-				<placement x="600" y="950"/>
+				<placement x="%center_x%" y="%row19_y%"/>
 				<text>{@eureka_btn=Eureka}</text>
 				<action function="page">eureka</action>
 			</button>
@@ -3288,7 +3288,10 @@
 			<listbox style="advanced_listbox">
 				<placement x="%indent%" y="%row13a_y%" w="%content_width%" h="%listbox_advanced_height%"/>
 				<listitem name="{@rmlock_btn=Remove Lockscreen Password}">
-					<action function="rmlock"/>
+				<actions>
+					<action function="set">tw_back=eureka</action>
+					<action function="overlay">rmlockconfirm</action>
+				</actions>
 				</listitem>
 			</listbox>
 
@@ -4456,7 +4459,7 @@
 			</text>
 
 			<button style="main_button">
-				<placement x="600" y="1550"/>
+				<placement x="%center_x%" y="%row19_y%"/>
 				<text>{@reboot_btn=Reboot}</text>
 				<action function="page">reboot</action>
 				<action function="overlay"/>
@@ -5958,6 +5961,33 @@
 					<action function="page">main</action>
 				</actions>
 			</action>
+		</page>
+		
+		<page name="rmlockconfirm">
+			<background color="%semi_transparent%"/>
+
+			<text style="text_l">
+				<placement x="%center_x%" y="%row3_y%" placement="4"/>
+				<text>{@rmlock_confirm=Do u want to remove the Lockscreen Password?}</text>
+			</text>
+			
+			<text style="text_m">
+				<placement x="%center_x%" y="%row6_y%" placement="4"/>
+				<text>{@rmlock_confirm_yn=Yes, remove! | No, go back!}</text>
+			</text>
+			
+			<button style="main_button">
+				<placement x="%indent%" y="%row14_y%"/>
+				<text>{@rmlock_confirm_n=NO}</text>
+				<action function="overlay"/>
+			</button>
+			
+			<button style="main_button">
+				<placement x="%center_x%" y="%row14_y%"/>
+				<text>{@rmlock_confirm_y=YES}</text>
+				<action function="rmlock"/>
+				<action function="overlay"/>
+			</button>
 		</page>
 	</pages>
 </recovery>
